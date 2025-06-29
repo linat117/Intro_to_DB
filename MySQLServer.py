@@ -1,14 +1,12 @@
 import mysql.connector;
 from mysql.connector import Error
-print("Script started...")
 
 def create_database():
     try:
         connection = mysql.connector.connect(
            host = 'localhost',
            user= 'root',
-           password = '',
-           database = "alx_book_store"
+           password = ''
         )
 
         if connection.is_connected():
